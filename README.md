@@ -25,7 +25,8 @@ The analysis was carried out following the workshop guidelines:
 
 ## Tools Used
 - **LaTeX** for writing the report.  
-- **TikZ** for visual diagrams.  
+- **TikZ** for visual diagrams.
+- **LucidChart** for visual diagrams.   
 - **Kaggle competition page** as the primary data source.  
 
 ## Code
