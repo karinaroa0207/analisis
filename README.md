@@ -39,7 +39,7 @@ The complete analysis is presented in the final PDF report.
 
 The complete analysis is presented in the final PDF report.
 
-📄 [Download Workshop 1 Systems Analysis Report](./workshops/Workshop1_SystemsAnalysis.pdf)
+📄 [Download Workshop 1 Systems Analysis Report](./workshops/Workshop 1 Systems Analysis.pdf)
 
 
 
