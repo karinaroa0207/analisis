@@ -32,12 +32,6 @@ The analysis was carried out following the workshop guidelines:
 ## Code
 Minimal code was included, mainly for diagram generation and LaTeX formatting.  
 
-## Final Report
-The complete analysis is presented in the final PDF report.  
-
-## Final Report
-
-The complete analysis is presented in the final PDF report.
 
 📄 [Download Workshop 1 Systems Analysis Report](./workshops/Workshop 1 Systems Analysis.pdf)
 
