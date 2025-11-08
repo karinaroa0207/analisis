@@ -1,134 +1,133 @@
 # Workshop 1 - Systems Analysis: GEFCom2012 Load Forecasting
 
-## 📋 Descripción del Proyecto
+## 📋 Project Description
 
-Este repositorio contiene el análisis de sistemas del **Taller #1** del curso de Análisis y Diseño de Sistemas, enfocado en la competencia **Global Energy Forecasting Competition 2012 (GEFCom2012) - Load Forecasting Track**.
+This repository contains the systems analysis for **Workshop #1** of the Systems Analysis and Design course, focused on the **Global Energy Forecasting Competition 2012 (GEFCom2012) - Load Forecasting Track**.
 
-## 🎯 Objetivo de la Competencia
+## 🎯 Competition Objective
 
-La competencia GEFCom2012 fue diseñada para fomentar la innovación en el pronóstico de demanda eléctrica a corto plazo. El objetivo principal era predecir la carga horaria del sistema para una utility estadounidense en múltiples zonas, manteniendo consistencia jerárquica entre las zonas individuales y la carga agregada del sistema.
+The GEFCom2012 competition was designed to foster innovation in short-term electricity demand forecasting. The main objective was to predict hourly system load for a US utility across multiple zones, while maintaining hierarchical consistency between individual zones and the aggregated system load.
 
-### Características Clave:
-- **Backcasting**: Reconstrucción de valores históricos faltantes
-- **Forecasting**: Predicción de demanda futura
-- **Consistencia Jerárquica**: Coherencia entre zonas individuales y carga total
-- **Importancia Estratégica**: Mejor programación de generación, trading y mantenimiento
+### Key Features:
+- **Backcasting**: Reconstruction of missing historical values
+- **Forecasting**: Prediction of future demand
+- **Hierarchical Consistency**: Coherence between individual zones and total load
+- **Strategic Importance**: Improved generation scheduling, trading, and maintenance
 
-## 📊 Estructura del Dataset
+## 📊 Dataset Structure
 
-### Componentes Principales:
+### Main Components:
 
-1. **Historial de Carga**
-   - Datos horarios de demanda para 20 zonas individuales
-   - Zona 21: Carga total del sistema (suma de todas las zonas)
-   - Estructura jerárquica explícita
+1. **Load History**
+   - Hourly demand data for 20 individual zones
+   - Zone 21: Total system load (sum of all zones)
+   - Explicit hierarchical structure
 
-2. **Historial de Temperatura**
-   - Registros horarios de múltiples estaciones meteorológicas
-   - Relación no lineal con la carga eléctrica
-   - Variable crítica para modelado predictivo
+2. **Temperature History**
+   - Hourly records from multiple weather stations
+   - Non-linear relationship with electrical load
+   - Critical variable for predictive modeling
 
-3. **Calendario de Festivos**
-   - Información de festivos estadounidenses
-   - Impacto significativo en patrones de consumo
+3. **Holiday Calendar**
+   - US holiday information
+   - Significant impact on consumption patterns
 
-4. **Pronósticos de Referencia**
-   - Baseline para comparación de mejoras
+4. **Reference Forecasts**
+   - Baseline for improvement comparison
 
-5. **Archivos de Solución**
-   - Valores reales para el período de evaluación
-   - Datos ocultos durante la competencia
+5. **Solution Files**
+   - Actual values for the evaluation period
+   - Data hidden during the competition
 
-## ⚠️ Restricciones y Desafíos
+## ⚠️ Constraints and Challenges
 
-### Restricciones Explícitas:
-- **Consistencia Jerárquica**: Pronósticos coherentes entre zonas y sistema total
-- **Información Incompleta**: Datos de temperatura no totalmente disponibles
-- **Relación No Lineal**: Efectos de umbral en temperatura-carga
-- **Procedimiento de Evaluación**: Split public/private leaderboard
-- **Métricas**: RMSE y MAPE como medidas principales
-- **Límites de Envío**: Balance entre exploración y optimización
+### Explicit Constraints:
+- **Hierarchical Consistency**: Coherent forecasts between zones and total system
+- **Incomplete Information**: Temperature data not fully available
+- **Non-linear Relationship**: Threshold effects in temperature-load relationship
+- **Evaluation Procedure**: Public/private leaderboard split
+- **Metrics**: RMSE and MAPE as main measures
+- **Submission Limits**: Balance between exploration and optimization
 
-## 🔍 Análisis de Sistemas
+## 🔍 Systems Analysis
 
-### Elementos del Sistema:
+### System Elements:
 
 **Inputs:**
-- Carga eléctrica histórica (20 zonas + agregada)
-- Datos de temperatura horarios
-- Lista de festivos
+- Historical electrical load (20 zones + aggregated)
+- Hourly temperature data
+- Holiday list
 
-**Procesos:**
-- Preparación y limpieza de datos
-- Modelado de relaciones carga-temperatura
-- Ajuste de consistencia jerárquica
+**Processes:**
+- Data preparation and cleaning
+- Load-temperature relationship modeling
+- Hierarchical consistency adjustment
 
 **Outputs:**
-- Demanda eléctrica pronosticada por zona y sistema
-- Valores backcasted reconstruidos
+- Forecasted electrical demand by zone and system
+- Reconstructed backcasted values
 
-**Evaluación:**
-- Métricas: RMSE y MAPE
-- Leaderboards público y privado
-- Ranking final basado en datos ocultos
+**Evaluation:**
+- Metrics: RMSE and MAPE
+- Public and private leaderboards
+- Final ranking based on hidden data
 
-## 🌀 Complejidad y Sensibilidad
+## 🌀 Complexity and Sensitivity
 
-### Factores de Complejidad:
-- Múltiples fuentes de datos
-- Dimensión temporal
-- Naturaleza jerárquica
-- Comportamiento individual por zona
-- Interdependencia entre zonas
+### Complexity Factors:
+- Multiple data sources
+- Temporal dimension
+- Hierarchical nature
+- Individual zone behavior
+- Interdependence between zones
 
-### Sensibilidad del Sistema:
-- Pequeños cambios en variables de entrada → Grandes efectos en pronósticos
-- Desviaciones en temperatura → Errores significativos en demanda
-- Acumulación de errores en agregación
-- Variabilidad por selección de modelos y hyperparámetros
+### System Sensitivity:
+- Small changes in input variables → Large effects on forecasts
+- Temperature deviations → Significant demand errors
+- Error accumulation in aggregation
+- Variability due to model selection and hyperparameters
 
-## 🌪️ Comportamiento Caótico y Aleatorio
+## 🌪️ Chaotic and Random Behavior
 
-### Factores Caóticos:
-- Actividades humanas irregulares
-- Eventos externos impredecibles
-- Cambios abruptos en comportamiento del consumidor
-- Efectos de retroalimentación no lineal
+### Chaotic Factors:
+- Irregular human activities
+- Unpredictable external events
+- Abrupt changes in consumer behavior
+- Non-linear feedback effects
 
-### Elementos Aleatorios:
-- Ruido en datos meteorológicos
-- Propagación de errores de temperatura
-- Fluctuaciones aleatorias a nivel de zona
-- Interacciones de modelado imprevistas
+### Random Elements:
+- Noise in meteorological data
+- Temperature error propagation
+- Random fluctuations at zone level
+- Unforeseen modeling interactions
 
-## 📈 Conclusiones del Análisis
+## 📈 Analysis Conclusions
 
-### Fortalezas del Sistema:
-- Múltiples fuentes de datos disponibles
-- Estructura jerárquica bien definida
-- Métricas de evaluación claras
-- Contexto rico para construcción de modelos
+### System Strengths:
+- Multiple available data sources
+- Well-defined hierarchical structure
+- Clear evaluation metrics
+- Rich context for model building
 
-### Debilidades Identificadas:
-- Datos faltantes e incompletos
-- Alta sensibilidad a fluctuaciones de temperatura
-- Acumulación de errores en agregación
-- Influencias caóticas de actividades humanas
+### Identified Weaknesses:
+- Missing and incomplete data
+- High sensitivity to temperature fluctuations
+- Error accumulation in aggregation
+- Chaotic influences from human activities
 
-### Impacto General:
-La competencia demostró el balance necesario entre información disponible, elecciones metodológicas y dinámicas impredecibles de la demanda eléctrica real.
+### Overall Impact:
+The competition demonstrated the necessary balance between available information, methodological choices, and unpredictable dynamics of real electricity demand.
 
-## 👥 Autores
+## 👥 Authors
 
 - David Santiago Téllez Melo - 20242020107
 - Ana Karina Roa Mora - 20232020118  
 - Daniela Bustamante Guerra - 20241020131
 - Andrés Felipe Correa Méndez - 20221020141
 
-## 🔗 Referencias
+## 🔗 References
 
 - [Global Energy Forecasting Competition 2012](https://www.kaggle.com/competitions?listOption=completed&hostSegmentIdFilter=2)
-- Curso: Análisis y Diseño de Sistemas
+- Course: Systems Analysis and Design
 
 ---
-
