@@ -1,49 +1,57 @@
-# Design and Implementation of an Educational Electricity Load Forecasting System: A Modular and Adaptive Approach
+# Educational Electricity Load Forecasting System
 
-## 📋 Project Overview
+## 📋 Project Description
 
-This repository contains the complete academic project for the Systems Analysis and Design course, presenting a modular and adaptive framework for electricity load forecasting based on the GEFCom2012 competition dataset.
+This repository contains the academic project for the **Systems Analysis and Design** course, implementing a modular electricity load forecasting system based on the GEFCom2012 competition. The project demonstrates the application of systems engineering principles to build a robust and reproducible forecasting framework.
 
 ## 🎯 Project Objectives
 
-- Design and implement a robust, modular forecasting system for electricity demand prediction
-- Integrate MLP and LSTM models within a clean architecture framework
-- Ensure reproducibility and educational value through transparent implementation
-- Address sensitivity and chaotic behavior in load forecasting systems
+- Design and implement a modular forecasting system for electricity demand prediction
+- Apply systems analysis and design principles to handle complex forecasting challenges
+- Develop a reproducible framework suitable for educational purposes
+- Integrate modern deep learning approaches with traditional forecasting methods
 
 ## 🏗️ System Architecture
 
-### Modular Pipeline Design
-The system follows a five-stage modular architecture:
+### Modular Pipeline
+The system follows a structured five-stage architecture:
 
-1. **Data Ingestion** - Multi-source data collection and validation
-2. **Feature Engineering** - Temporal, weather, and calendar feature generation
-3. **Model Training** - MLP and LSTM implementation with PyTorch
-4. **Forecast Generation** - Hierarchical consistent prediction
-5. **Evaluation & Monitoring** - Continuous performance assessment
+1. **Data Ingestion** - Collection and validation of multi-source data
+2. **Feature Engineering** - Creation of temporal, weather, and calendar features
+3. **Model Training** - Implementation of MLP and LSTM models using PyTorch
+4. **Forecast Generation** - Production of hierarchical consistent predictions
+5. **Evaluation & Monitoring** - Continuous performance assessment and feedback
 
-### Clean ML Implementation
-- **Data Layer**: Standardization and preprocessing
-- **Feature Layer**: Engineered features (HDD/CDD, lagged variables)
-- **Model Layer**: PyTorch-based MLP and LSTM networks
-- **Validation Layer**: Rolling-origin cross-validation
-- **Application Layer**: End-to-end workflow coordination
+### Technical Implementation
+- **Framework**: PyTorch-based deep learning implementation
+- **Architecture**: Clean ML principles with clear separation of concerns
+- **Models**: Multilayer Perceptron (MLP) and Long Short-Term Memory (LSTM)
+- **Validation**: Rolling-origin cross-validation for realistic evaluation
 
 ## 📊 Key Features
 
-### Technical Innovations
-- **Dual-Model Approach**: MLP for tabular data + LSTM for sequential patterns
-- **Hierarchical Consistency**: Zone-level and aggregated forecasting
-- **Robust Validation**: Rolling-origin cross-validation mimicking real-world conditions
-- **Sensitivity Management**: Dropout regularization and ensemble averaging
+### System Design
+- **Modularity**: Independent, testable components
+- **Reproducibility**: Transparent and well-documented workflow
+- **Flexibility**: Easy model interchangeability
+- **Robustness**: Handling of sensitive and chaotic data patterns
 
-### Educational Value
-- Reproducible, well-documented codebase
-- Clear separation of concerns in architecture
-- Comprehensive documentation and reporting
-- Suitable for academic and research purposes
+### Technical Capabilities
+- Dual-model approach (MLP for tabular data + LSTM for sequences)
+- Hierarchical forecasting consistency
+- Comprehensive feature engineering
+- Continuous validation and monitoring
 
+## 📚 Academic Deliverables
 
+This repository contains the complete academic project including:
+
+- **Workshop 1**: Systems analysis of GEFCom2012 competition
+- **Workshop 2**: System design and architecture specification  
+- **Research Paper**: IEEE format technical paper
+- **Technical Report**: Comprehensive project documentation
+- **Academic Poster**: Visual project summary
+- **Source Code**: Modular implementation
 
 ## 🛠️ Technology Stack
 
@@ -51,30 +59,33 @@ The system follows a five-stage modular architecture:
 - **Data Processing**: pandas, NumPy
 - **Validation**: scikit-learn
 - **Visualization**: matplotlib
-- **Architecture**: Clean ML principles
+- **Development**: Python 3.x
 
-## 👥 Authors
+## 👥 Team Members
 
-- **David Santiago Téllez Melo** (20242020107)
-- **Ana Karina Roa Mora** (20232020118)  
-- **Daniela Bustamante Guerra** (20241020131)
-- **Andrés Felipe Correa Méndez** (20221020141)
+- David Santiago Téllez Melo - 20242020107
+- Ana Karina Roa Mora - 20232020118  
+- Daniela Bustamante Guerra - 20241020131
+- Andrés Felipe Correa Méndez - 20221020141
 
-**Faculty of Engineering, Systems Engineering Program**  
+**Systems Engineering Program**  
+Faculty of Engineering  
 Universidad Distrital Francisco José de Caldas  
 Bogotá, Colombia
 
-## 📚 Academic Context
+## 📖 Academic Context
 
-This project was developed as part of the **Systems Analysis and Design** course, focusing on applying engineering principles to complex forecasting systems using the GEFCom2012 Load Forecasting competition as a case study.
+Course: **Systems Analysis and Design**  
+Project: **Educational Electricity Load Forecasting System**  
+Case Study: **GEFCom2012 Load Forecasting Competition**
 
 ## 🔗 References
 
 - Global Energy Forecasting Competition 2012 (GEFCom2012)
 - PyTorch Deep Learning Library
-- Clean Machine Learning Architecture principles
+- Clean Architecture Principles
 - Universidad Distrital Francisco José de Caldas
 
 ---
 
-*This project represents a comprehensive educational approach to electricity load forecasting, combining modern deep learning techniques with robust systems engineering principles.*
+*This project demonstrates the application of systems engineering principles to build an educational forecasting framework, emphasizing modularity, reproducibility, and practical implementation.*
