@@ -1,79 +1,76 @@
 # Workshop 2 - Systems Analysis & Design: GEFCom2012 Load Forecasting
 
-## 📋 Descripción del Proyecto
+## 📋 Project Description
 
-Este repositorio contiene el desarrollo del **Taller #2** del curso de Análisis y Diseño de Sistemas, enfocado en el diseño de un sistema de pronóstico de carga eléctrica para la **Global Energy Forecasting Competition 2012 (GEFCom2012)**.
+This repository contains the development of **Workshop #2** for the Systems Analysis and Design course, focused on designing an electrical load forecasting system for the **Global Energy Forecasting Competition 2012 (GEFCom2012)**.
 
-## 🎯 Objetivos del Taller
+## 🎯 Workshop Objectives
 
-- Diseñar una arquitectura de sistema robusta para pronóstico de carga eléctrica
-- Aplicar principios de ingeniería de sistemas considerando sensibilidad y caos
-- Desarrollar un documento de diseño técnico completo
-- Integrar los hallazgos del Taller #1 en propuestas de diseño concretas
+- Design a robust system architecture for electrical load forecasting
+- Apply systems engineering principles considering sensitivity and chaos
+- Develop a comprehensive technical design document
+- Integrate findings from Workshop #1 into concrete design proposals
 
+## 🏗️ System Architecture
 
-## 🏗️ Arquitectura del Sistema
+### Main Components
 
-### Componentes Principales
+The proposed system follows a modular pipeline architecture with 5 stages:
 
-El sistema propuesto sigue una arquitectura de pipeline modular con 5 etapas:
+1. **Data Ingestion** - Multi-source data fusion and validation
+2. **Feature Engineering** - Data transformation and cleaning
+3. **Model Training** - MLP/LSTM with temporal validation
+4. **Forecast Generation** - Consistent hierarchical prediction
+5. **Evaluation and Monitoring** - Metrics and continuous feedback
 
-1. **Ingesta de Datos** - Fusión y validación de datos multi-fuente
-2. **Ingeniería de Features** - Transformación y limpieza de datos
-3. **Entrenamiento de Modelos** - MLP/LSTM con validación temporal
-4. **Generación de Pronósticos** - Predicción jerárquica consistente
-5. **Evaluación y Monitoreo** - Métricas y retroalimentación continua
+### Included Diagrams
 
-### Diagramas Incluidos
+- **Figure 1**: Complete forecasting system architecture
+- **Figure 2**: Sensitivity and chaos management mechanisms
 
-- **Figura 1**: Arquitectura completa del sistema de pronóstico
-- **Figura 2**: Mecanismos de manejo de sensibilidad y caos
+## 🛠️ Technology Stack
 
-## 🛠️ Stack Tecnológico
+- **Main Framework**: PyTorch
+- **Data Processing**: pandas, NumPy
+- **Validation and Metrics**: scikit-learn
+- **Visualization**: matplotlib
+- **Architecture**: Clean ML Architecture
 
-- **Framework Principal**: PyTorch
-- **Procesamiento de Datos**: pandas, NumPy
-- **Validación y Métricas**: scikit-learn
-- **Visualización**: matplotlib
-- **Arquitectura**: Clean ML Architecture
+## 📊 Design Features
 
-## 📊 Características del Diseño
+### Sensitivity Management
+- Continuous validation of input data
+- Robust imputation techniques
+- Real-time anomaly detection
 
-### Manejo de Sensibilidad
-- Validación continua de datos de entrada
-- Técnicas de imputación robusta
-- Detección de anomalías en tiempo real
+### Chaotic Behavior Management
+- Dropout layers for regularization
+- Rolling origin cross-validation
+- Ensemble averaging
+- Automated feedback mechanisms
 
-### Gestión de Comportamiento Caótico
-- Capas de dropout para regularización
-- Validación cruzada de origen rodante
-- Promediado de ensembles
-- Mecanismos de retroalimentación automática
+### Engineering Principles
+- **Modularity**: Decoupled components
+- **Scalability**: Pipeline architecture
+- **Maintainability**: Clear separation of responsibilities
+- **Traceability**: Complete data lineage
 
-### Principios de Ingeniería
-- **Modularidad**: Componentes desacoplados
-- **Escalabilidad**: Arquitectura pipeline
-- **Mantenibilidad**: Separación clara de responsabilidades
-- **Trazabilidad**: Linaje completo de datos
+## 📄 Main Document
 
-## 📄 Documento Principal
-
-El documento completo del taller se encuentra en:
+The complete workshop document is located at:
 **[Workshop_2.pdf](./Workshop_2.pdf)**
 
-## 👥 Autores
+## 👥 Authors
 
 - David Santiago Téllez Melo - 20242020107
 - Ana Karina Roa Mora - 20232020118  
 - Daniela Bustamante Guerra - 20241020131
 - Andrés Felipe Correa Méndez - 20221020141
 
-
-## 🔗 Referencias
+## 🔗 References
 
 - [Global Energy Forecasting Competition 2012](https://www.kaggle.com/competitions?listOption=completed&hostSegmentIdFilter=2)
 - Universidad Distrital Francisco José de Caldas
-- Curso: Análisis y Diseño de Sistemas
+- Course: Systems Analysis and Design
 
 ---
-
