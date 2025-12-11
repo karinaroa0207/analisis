@@ -1,0 +1,40 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.tmp
+*.log
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+
+# Archivos de configuración locales
+*.env
+*.ini
+*.cfg
+*.local
+
+# Carpetas de compilación
+build/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ---- VS Code ----
+.vscode/
+
+# ---- Windows ----
+Thumbs.db
+Desktop.ini
+
+# ---- Logs ----
+*.log
+
+# ---- Otros ----
+.DS_Store
